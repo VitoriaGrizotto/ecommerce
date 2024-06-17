@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scente Haven</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+   
+</head>
+ 
+<body>
+    <!--cabeçalho da página-->
+    <header>
+        <div class="caixa">
+            <p>Lançamento! Blessed Comprar agora!</p>
+        </div>
+ 
+        <div id="topo-cabecalho">
+            <div class="logo">
+                <img src="images/logo.png" >
+            </div>
+ 
+            <div id="txtBusca">
+                <div>
+                   
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Pesquisar" />
+                    <a href="formulario.html"><i class="bi bi-person-circle"></i></a>
+                    <a href="carrinho.html"><i class="bi bi-cart"></i></a>
+                   
+                </div>
+                   
+               
+            </div>
+        </div>
+        <!-- container para centralizar o conteudo -->
+        <div class="container">
+            <nav class="header-navbar" id="navbar">
+                <ul class="container">
+                  <li><a href="Perfumes.html">Perfumes</a></li>
+                  <li><a href="BodySplash.html">Body Splash</a></li>
+                  <li><a href="SkinCare.html">Skin Care</a></li>
+                  <li><a href="cremes.html">Cremes</a></li>
+                  <li><a href="produtos.html">Todos os produtos</a></li>
+                </ul>
+              </nav>
+           
+</header>
+
+
+  <main id="carrinho">
+    <div class="container">
+        <div class="product-title">
+            <h2>Carrinho</h2>
+        </div>
+
+        <div class="carrinho-grid">
+            <section class="grid-1">
+                <ul>
+                    <li>
+                        <div class="cart-item">
+                            <div class="cart-item-img">
+                                <div class="cart-img-container">
+                                    <img src="./images/principal.png" alt="">
+                                </div>
+                                
+
+                            </div>
+                            <div class="cart-item-info">
+                                <p>Body Cream Celebrate Life Desodorante Hidratante 200ml - Wepink</p>
+                                <h2>R$ 32,00</h2>
+                                <input type="number" name="" id="">
+                                <i class="bi bi-trash3"></i>
+
+                            </div>
+                        </div>
+                    </li>
+                   <div class="cart-item">
+                      <div class="cart-item-img">
+                          <div class="cart-img-container">
+                              <img src="./images/principal.png" alt="">
+                          </div>
+                          
+
+                      </div>
+                      <div class="cart-item-info">
+                          <p>Body Cream Celebrate Life Desodorante Hidratante 200ml - Wepink</p>
+                          <h2>R$ 32,00</h2>
+                          <input type="number" name="" id="">
+                          <i class="bi bi-trash3"></i>
+
+                      </div>
+                  </div>
+              </li>
+              <div class="cart-item">
+                <div class="cart-item-img">
+                    <div class="cart-img-container">
+                        <img src="./images/principal.png" alt="">
+                    </div>
+                    
+
+                </div>
+                <div class="cart-item-info">
+                    <p>Body Cream Celebrate Life Desodorante Hidratante 200ml - Wepink</p>
+                    <h2>R$ 32,00</h2>
+                    <input type="number" name="" id="">
+                    <i class="bi bi-trash3"></i>
+
+                </div>
+            </div>
+        </li>
+                </ul>
+            </section>
+
+
+
+            <section class="grid-2">
+                <div class="total-container">
+                    <div class="total-info">
+                        <h2>Total dos itens:</h2>
+                        <h2>R$96,00</h2>
+                    </div>
+                    <div class="total-info">
+                        <h2>Frete:</h2>
+                        <h2>R$15,00</h2>
+                </div>
+                <div class="total-info">
+                    <h2>Valor total:</h2>
+                    <h2>R$112,00</h2>
+                </div>
+                <div class="buy-section">
+                    <a href="formulario.html"><button>Comprar</button></a>
+                </div>
+                
+                </div>
+                <form action="/submit" method="post">
+                    <fieldset>
+                        <legend>Forma de Pagamento</legend>
+            
+                        <input type="radio" id="cartaoCredito" name="formaPagamento" value="cartaoCredito" required>
+                        <label for="cartaoCredito">Cartão de Crédito</label><br>
+            
+                        <input type="radio" id="boleto" name="formaPagamento" value="boleto" required>
+                        <label for="boleto">Boleto</label><br>
+            
+                        <input type="radio" id="paypal" name="formaPagamento" value="paypal" required>
+                        <label for="paypal">PayPal</label><br>
+                        
+                        <input type="radio" id="pix" name="formaPagamento" value="pix" required>
+                        <label for="pix">Pix</label><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Endereço de Entrega</legend>
+            
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" required>
+            
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required>
+            
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado" required>
+            
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required>
+                    </fieldset>
+            
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+
+
+
+
+
+        </div>
+    </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-col1">
+                <div class="contato">
+                    <h3>Fale Conosco</h3>
+                    <p>Telefone: (19) 99134-2185</p>
+                    <p>Telefone: (19) 24567-8765</p>
+                    <p>Email: vitoria.grizotto@senaisp.edu.br</p>
+                </div>
+                <div class="redes-sociais">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+            </div>
+     
+            <div class="footer-col2">
+                <i class="bi bi-bag-check-fill"></i>
+                <a href="index.html" class="botao-voltar">Voltar</a>
+            </div>
+     
+     
+     
+     
+        </div>
+    </footer>
